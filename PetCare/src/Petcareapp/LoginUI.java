@@ -8,6 +8,7 @@ import java.awt.Image;
 import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import petcareapp.DatabaseHandler;
 
 /**
  *
@@ -185,6 +186,21 @@ public class LoginUI extends javax.swing.JFrame {
                 storemanagerui.setVisible(true);
                 dispose();
                 
+            }
+            else if (userRole.equals("PlatformAdministrator")){
+                PlatformAdminUI adminui = new PlatformAdminUI(username);
+                adminui.setVisible(true);
+                dispose();
+            }
+            else if (userRole.equals("InsuranceAgent")){
+                InsuranceAgentUI insuranceagent = new InsuranceAgentUI(username);
+                insuranceagent.setVisible(true);
+                dispose();
+            }
+            else if (userRole.equals("LogisticsPersonnel")){
+                logisticsUI logisticsui = new logisticsUI(username);
+                logisticsui.setVisible(true);
+                dispose();
             }
         } else {
             JOptionPane.showMessageDialog(this, "Invalid username or password.", "Error", JOptionPane.ERROR_MESSAGE);
