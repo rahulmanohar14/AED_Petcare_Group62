@@ -17,6 +17,7 @@ public class AddInsurance extends javax.swing.JFrame {
      */
     public AddInsurance() {
         initComponents();
+        
     }
 
     /**

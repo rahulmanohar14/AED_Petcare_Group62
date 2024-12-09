@@ -4,6 +4,8 @@
  */
 package Petcareapp;
 
+
+
 import javax.swing.JOptionPane;
 
 /**
@@ -64,7 +66,7 @@ public class RegisterUI extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PetOwner", "Veterinarian", "Groomer", "Trainer", "StoreManager" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PetOwner", "Veterinarian", "Groomer", "Trainer", "StoreManager", "PlatformAdministrator", "InsuranceAgent" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -255,5 +257,5 @@ public class RegisterUI extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
-    private DatabaseHandler dbHandler;
+     private DatabaseHandler dbHandler;
 }
