@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package petcareapp;
+package Petcareapp;
 
 import java.sql.*;
 import java.util.HashMap;
@@ -54,6 +54,7 @@ public class DatabaseHandler {
             return false;
         }
     }
+    
     public String allpetid(int userId){
         String query = "SELECT pet_id FROM pets WHERE owner_id = ?";
     StringBuilder result = new StringBuilder();
@@ -1225,6 +1226,3 @@ public class DatabaseHandler {
     
     
 }
-    
-    
-

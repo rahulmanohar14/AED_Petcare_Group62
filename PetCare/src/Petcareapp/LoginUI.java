@@ -8,7 +8,6 @@ import java.awt.Image;
 import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import petcareapp.DatabaseHandler;
 
 /**
  *
